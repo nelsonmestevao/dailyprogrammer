@@ -11,7 +11,7 @@ end
 open("input.txt") do file
     for ln in eachline(file)
         times, faces = split(ln, "d")
-        println("$(string(coiso(parse(Int,times),parse(Int,faces))))")
+        println("$(coiso(parse(Int,times),parse(Int,faces)))")
     end
 end
 
