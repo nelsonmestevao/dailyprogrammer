@@ -15,4 +15,3 @@ open("input.txt") do file
     end
 end
 
-
