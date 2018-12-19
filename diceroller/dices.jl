@@ -14,4 +14,3 @@ open("input.txt") do file
         println("$(alea_iacta_est(parse(Int32,rolls),parse(Int32,faces)))")
     end
 end
-
