@@ -12,9 +12,8 @@ end
 
 open("input.txt") do file
     for ln in eachline(file)
-        #= n = parse(Int32,ln) =#
-        #= println("$(derangement(n))") =#
-        println("$(derangement((parse(Int64,ln))))")
+        n = parse(Int64,ln)
+        println("$(derangement(n))")
     end
 end
 
