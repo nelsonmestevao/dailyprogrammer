@@ -1,7 +1,6 @@
 #!/usr/bin/env perl
 
-my $x = $ARGV[0];
-for (my $i = 1; $i <= $x; $i++) {
-    printf ' '  x ($x - $i) . '#' x $i . "\n";
+for $i (1..$ARGV[0]) {
+    printf ' '  x ($ARGV[0] - $i) . '#' x $i . "\n";
 }
 
