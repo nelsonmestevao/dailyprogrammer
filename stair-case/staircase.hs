@@ -1,7 +1,6 @@
 module Main where
 
 import System.Environment(getArgs)
-import Data.Char(digitToInt)
 
 staircase :: Int -> String
 staircase n = stair n (n-1) ++ ['\n']
