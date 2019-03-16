@@ -5,8 +5,8 @@ import System.Environment (getArgs)
 
 nextDigit :: Char -> String
 nextDigit '9' = "10"
-nextDigit c =
-  let n = intToDigit . succ . digitToInt $ c
-   in [n]
+nextDigit c = [increase c]
+  where
+    increase = intToDigit . succ . digitToInt
 
 main = getArgs >>= putStrLn . concatMap nextDigit . head
